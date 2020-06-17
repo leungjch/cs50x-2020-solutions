@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell stocks
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <input autocomplete="off" autofocus class="form-control", id='ticker', name="ticker" placeholder="Stock ticker" type="text">
+        <input autocomplete="off" autofocus class="form-control", id='nsell', name="nsell" placeholder="Shares" type="number">
+
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}

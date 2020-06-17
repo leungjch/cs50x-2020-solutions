@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <body>
+        <h1> Portfolio</h1>
+        <ul>
+            {% for row in rows %}
+                <li>{{row["symbol"]}} {{row["n_shares"]}} {{row["current_price"]}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+{% endblock %}

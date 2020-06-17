@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+    <form action="/register" method="post">
+            <input name="username" placeholder="Username" type="text">
+            <input id = 'password1', name="password1" placeholder="Password" type="password">
+            <input id = 'password2', name="password2" placeholder="Confirm password" type="password">
+            <input id = "submitme", type = "submit">
+    </form>
+    <script>
+    // checkpasswords = function()
+    //     {
+    //         if ((document.querySelector('#password1').value !== (document.querySelector('#password2').value)) || (document.querySelector('#password1').value === '') || (document.querySelector('#password2').value === ''))
+    //             {
+    //                 document.querySelector('#submitme').disabled = true;
+    //             } else {
+    //                 document.querySelector('#submitme').disabled = false;
+    //             }
+    //     };
+    //     document.querySelector("#password2").onkeyup = checkpasswords;
+    //     document.querySelector("#password1").onkeyup = checkpasswords;
+    </script>
+{% endblock %}
+

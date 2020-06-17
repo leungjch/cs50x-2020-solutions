@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        <script>
+        function myfunction()
+        {
+            let x = document.querySelector("#exampleInputEmail1").value;
+            let y = document.querySelector("#exampleInputPassword1").value;
+            alert("Your email is " + x);
+            alert("Your password is " + y);
+        }
+        </script>
+    </head>
+    <body>
+        <h1> Welcome to page 1</h1>
+        <p> Hello, this is page 1. </p>
+        <a href = "page2.html"> Click here for page 2. </a>
+
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" onclick=myfunction() class="btn btn-primary">Submit</button>
+        </form>
+
+    </body>
+</html>
